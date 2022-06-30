@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# NFT Portfolio Website 🎯
+ Responsive NFT Portfolio website using React JS.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Language count](https://img.shields.io/github/languages/count/letnagao/nft-portfolio-website?color=green)
+![Top language](https://img.shields.io/github/languages/top/letnagao/nft-portfolio-website?color=ff69b4)
+![Repo size](https://img.shields.io/github/repo-size/letnagao/nft-portfolio-website?color=yellow)
+![Commit Activity](https://img.shields.io/github/commit-activity/y/letnagao/nft-portfolio-website?color=blue)
+![Latest commit](https://img.shields.io/github/last-commit/letnagao/nft-portfolio-website?color=red)
+[![GitHub watchers](https://img.shields.io/github/watchers/letnagao/nft-portfolio-website?logo=GitHub)](https://github.com/letnagao/nft-portfolio-website/watchers)
+![Maintained](https://img.shields.io/maintenance/yes/9999)
 
-## Available Scripts
+## Features 🔥
+✔️  <br />
+✔️ Asynchronous events handling <br />
+✔️ Performance improvement with lazy loading <br />
 
-In the project directory, you can run:
+## Technologies used 🛠️
+**Libraries**: <br />
+    - **redux-logger**: console logging redux data flow <br />
+    - **redux**: state management <br />
+    - **redux-thunk**: handling asynchronous events <br />
+    - **axios**: implement api requests with ease <br />
+    - **reselect**: reusing redux selectors in a performant way <br />
+    - **redux-persist**: storing data in local storage <br />
+    - **concurrently**: for running multiple scripts concurrently <br />
 
-### `npm start`
+## Usage 📋
+<details open>
+<summary>1. Server Setup</summary>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+#1. clone this project
+~ git clone https://github.com/letnagao/nft-portfolio-website.git
+#2. cd into it
+~ cd nft-portfolio-website
+#3. install serevr dependencies
+~ npm i
+#3. install client dependencies
+~ cd client && npm i
+#4. run app (both client & server)
+~ npm run dev
+```
+*available scripts*
+```bash
+~ npm run client
+~ npm run server
+~ npm run build
+~ npm run dev
+~ npm start
+~ npm run heroku-postbuild
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Contributing 💡
+Pull request are welcome but please open an issue and discuss what you will do before 😊
 
-### `npm test`
+## Like this project? 💖
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you are feeling generous, buy me a coffee! - https://www.buymeacoffee.com/lunagao
