@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css'
-import bg from '../props/photo-nft.jpg';
+import bg from '../../assets/photo-nft.jpg';
 
 function Home () {
   return (
@@ -14,6 +14,10 @@ function Home () {
                 <c>eXplore</c> my <d>nft</d> <br />
                 collection
             </h1>
+
+            <a href="#collection" className="show-me">
+                <span>show me</span>
+            </a>
         </div>
     </div>
   )

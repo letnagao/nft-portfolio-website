@@ -1,0 +1,121 @@
+.Home {
+    position: relative;
+    min-height: 100vh;
+}
+
+.bg {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+.bg img {
+    height: 100%;
+    width: 100%;
+    animation: glow 2s ease 5.5s infinite;
+}
+
+@keyframes grow {
+    0%, 100% {
+        filter: saturate(1);
+    }
+    50% {
+        filter: saturate(2);
+    }
+}
+
+.bg::after {
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.925);
+    height: 100%;
+    width: 100%;
+    animation: bright 1s ease-out 0.6s forwards;
+}
+
+@keyframes bright {
+    to {
+        background-color: rgba(0, 0, 0, 0.473);
+    }
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 60px;
+    padding: 0 15px;
+}
+
+.content h1 {
+    color: white;
+    font-family: Nova Round, cursive;
+    font-size: 80px;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transform: translateY(100px);
+    animation: reveal 1s ease-out 2.5s forwards;
+}
+
+@keyframes reveal {
+    to {
+        height: 233px;
+        transform: translateY(0);
+    }
+}
+
+.content h1 c {
+    -webkit-text-stroke: 2px var(--clr-pri);
+    color: transparent;
+    font-family: Poppins, sans-serif;
+    font-size: 90px;
+}
+
+.content h1 d {
+    background: linear-gradient(60deg, var(--clr-pri), var(--clr-sec));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Nova Round", cursive;
+}
+
+.content .show-me {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    padding: 19px 35px;
+    background-color: var(--clr-pri);
+    margin-top: 90px;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+    opacity: 0;
+    animation: show 1s ease 3.4s forwards;
+}
+
+.content .show-me:active {
+    transform: scale(0.99);
+}
+
+.content .show-me span {
+    color: white;
+    font-family: Nova Round, cursive;
+    font-size: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+@media (max-width:850px) {
+    
+}
