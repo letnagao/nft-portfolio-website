@@ -1,0 +1,77 @@
+.section2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80vw;
+    min-height: 100vh;
+    padding: 0 15px;
+    scroll-snap-align: start;
+}
+
+.section2 .text-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.text-content .text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-content .text h1 {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    /* opacity: 0; */
+    padding: 10px 0;
+}
+
+.text h1 span {
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+    font-family: Varela Round, cursive;
+    font-size: 40px;
+    background: linear-gradient(var(--clr-pri), var(--clr-sec));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* height: 0; */
+}
+
+.text h1 span::before {
+    background: linear-gradient(var(--clr-pri), var(--clr-sec));
+    bottom: 0;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+}
+
+.text-content .text h2 {
+    border-left: 1px solid rgba(255, 255, 255, 0.87);
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 5px;
+    padding: 20px 15px;
+    position: relative;
+    /* opacity: 0; */
+}
+
