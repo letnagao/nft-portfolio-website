@@ -1,0 +1,99 @@
+.nav {
+    position: fixed;
+    display: flex;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  .nav .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: linear-gradient(20deg, var(--clr-sec), var(--clr-pri));
+    margin: 0 15px;
+    bottom: 0;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  }
+  
+  .nav .menu a {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.877);
+    font-size: 25px;
+    text-decoration: none;
+  }
+  
+  .nav .menu:hover {
+    bottom: 15px;
+  }
+  
+  .nav .menu.active {
+    animation: inset 1s ease forwards;
+    animation-delay: calc(var(--d) * 0.25s);
+  }
+  
+  @keyframes inset {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #tooltip {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: var(--clr-pri);
+    font-size: 13px;
+    font-weight: 700;
+    background: hsla(0, 0%, 100%, 0.685);
+    backdrop-filter: blur(15px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    z-index: -1;
+  }
+  
+  #tooltip:after {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    top: 100%;
+    border: 8px solid transparent;
+    border-top-color: hsla(0, 0%, 100%, 0.685);
+  }
+  
+  .nav .menu:hover #tooltip {
+    opacity: 1;
+    transform: translateY(-50px);
+  }
+  
+  @media (max-width: 500px) {
+    .nav {
+      width: 100%;
+      bottom: 20px;
+      justify-content: space-between;
+    }
+    .nav .menu {
+      height: 55px;
+      width: 55px;
+    }
+  }
