@@ -9,11 +9,6 @@
 [![GitHub watchers](https://img.shields.io/github/watchers/letnagao/nft-portfolio-website?logo=GitHub)](https://github.com/letnagao/nft-portfolio-website/watchers)
 ![Maintained](https://img.shields.io/maintenance/yes/9999)
 
-## Features 🔥
-✔️  <br />
-✔️ Asynchronous events handling <br />
-✔️ Performance improvement with lazy loading <br />
-
 ## Technologies used 🛠️
 **Libraries**: <br />
     - **redux-logger**: console logging redux data flow <br />
@@ -23,6 +18,16 @@
     - **reselect**: reusing redux selectors in a performant way <br />
     - **redux-persist**: storing data in local storage <br />
     - **concurrently**: for running multiple scripts concurrently <br />
+
+  
+</ul><h2> Preview ⚡️</h2>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99754900/177024465-55c4557e-5999-4063-ac44-d42fbc4493ce.jpg" />
+</p>  
+
+## Features 🔥
+✔️ Asynchronous events handling <br />
+✔️ Performance improvement with lazy loading <br />
 
 ## Usage 📋
 <details open>
@@ -47,8 +52,13 @@
 ~ npm run build
 ~ npm run dev
 ~ npm start
-~ npm run heroku-postbuild
 ```
+
+## Disclamer ❗️
+A word of disclaimer, I may have made some changes to it or added other content, but the code is not completely original!
+I am simply a student passionate about Front-end and the intersection of code and design, I always try to do courses and projects during my free time, so I must warn you that this code is NOT ORIGINAL.
+
+You can find the source of this code via: https://www.youtube.com/channel/UCzoBz4EKrLOvm3L4DDNc_pg
 
 ## Contributing 💡
 Pull request are welcome but please open an issue and discuss what you will do before 😊
