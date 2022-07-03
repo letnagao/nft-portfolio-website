@@ -1,4 +1,5 @@
 import './App.css';
+import Collection from './components/collection/Collection';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
 import Nav from './components/nav/Nav';
@@ -11,7 +12,7 @@ function App() {
       <Home />
       <Nav />
       <Section2 />
-      {/* <Collection /> */}
+      <Collection />
       {/* <Contact /> */}
     </div> 
   );
